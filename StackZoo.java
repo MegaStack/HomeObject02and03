@@ -3,19 +3,23 @@ package com.gmail.oastro36;
 import java.util.Arrays;
 
 public class StackZoo {
-	private Object[] zoo;
-	private Object[] blackList;
+	private Object[] zoo = new Object[10];
+	private Class[] blackList;
 
-	public StackZoo(Object [] blackList) {
+	public StackZoo(Class[] blackList) {
 		super();
-		this.zoo = new Object[10];
 		this.blackList = blackList;
+	}
+
+	public StackZoo() {
+		super();
 	}
 
 	public void addObj(Object obj) {
 		for (int i = 0; i < zoo.length; i++) {
 			if (zoo[i] == null) {
-				if (check(zoo[i])) {
+				Object buff = obj;
+				if (check(buff)) {
 					zoo[i] = obj;
 					return;
 				}
