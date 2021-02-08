@@ -10,16 +10,17 @@ public class Main {
 		Human humanOne = new Human("Sasha", "Ivanov", "Petrovich");
 		Lion lionOne = new Lion("King", "African");
 		Snake snakeOne = new Snake("Zljuka", "Kobra");
-		Object[] blackListArray = new Object[] {Human.class, Snake.class};
+		Class[] blackListArray = new Class[] {Human.class, Snake.class};
 		
 		BlackList bl = new BlackList(blackListArray);
 				
-		StackZoo zoo = new StackZoo(bl.getBlackList());
+		StackZoo zoo = new StackZoo(blackListArray);
 		
 		zoo.addObj(catOne);
 		zoo.addObj(dogOne);
 		zoo.addObj(foxOne);
 		zoo.addObj(lionOne);
+		zoo.addObj(humanOne);
 		
 		System.out.println(zoo);
 		
