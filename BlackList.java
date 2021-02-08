@@ -3,9 +3,9 @@ package com.gmail.oastro36;
 import java.util.Arrays;
 
 public class BlackList {
-	private Object[] blackList;
+	private Class[] blackList;
 
-	public BlackList(Object[] blackList) {
+	public BlackList(Class[] blackList) {
 		super();
 		this.blackList = blackList;
 	}
@@ -14,7 +14,7 @@ public class BlackList {
 		super();
 	}
 
-	public Object[] getBlackList() {
+	public Class[] getBlackList() {
 		return blackList;
 	}
 
