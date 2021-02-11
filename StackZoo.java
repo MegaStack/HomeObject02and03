@@ -66,8 +66,3 @@ public class StackZoo {
 	}
 }
 
-//public Object getObjectWithoutDel() {
-//	Class classBuffer = (zoo[index]).getClass();
-//	Object objClone = (Object)(zoo[index]).clone();
-//	return objClone;
-//}
